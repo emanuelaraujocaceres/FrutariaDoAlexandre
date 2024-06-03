@@ -20,11 +20,12 @@ nav ul {
     text-align: center;
 }
 
-nav ul li {
-    display: inline-block; /* Alteração para inline-block para colocar os itens na horizontal */
-    margin-right: 150px; /* Espaçamento entre cada palavra */
-    height: 55px; /* Definindo uma altura para os itens do menu */
-    line-height: 50px; /* Centralizando o texto verticalmente */
+@media only screen and (max-width: 600px) {
+    nav ul li {
+        display: block; /* Itens do menu na vertical */
+        margin-right: 0; /* Remova o espaçamento lateral */
+        margin-bottom: 10px; /* Adicione espaçamento entre os itens */
+    }
 }
 
 nav ul li:last-child {
@@ -149,13 +150,14 @@ p {
 
 .mapa-container {
     position: relative;
-    max-width: 80%;
-    max-height: 80%;
-    margin: 20px auto; /* Adiciona espaçamento superior */
+    max-width: 100%; /* Use uma porcentagem para que o mapa seja responsivo */
+    height: 300px; /* Defina uma altura fixa ou relativa conforme necessário */
+    margin: 58px auto 0; /* Altere conforme necessário para o espaçamento superior */
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 
 .mapa-texto {
     position: absolute;
