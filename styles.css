@@ -151,7 +151,7 @@ p {
     position: relative;
     max-width: 80%;
     max-height: 80%;
-    margin: 50px auto; /* Adiciona espaçamento superior */
+    margin: 20px auto; /* Adiciona espaçamento superior */
     display: flex;
     justify-content: center;
     align-items: center;
